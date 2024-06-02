@@ -28,7 +28,7 @@ return {
     ---@class PluginLspOpts
     opts = {
       inlay_hints = {
-        enabled = true,
+        enabled = false,
       },
       -- Enable this to enable the builtin LSP code lenses on Neovim >= 0.10.0
       -- Be aware that you also will need to properly configure your LSP server to
@@ -71,6 +71,18 @@ return {
           },
         },
       },
+    },
+    {
+      "ray-x/lsp_signature.nvim",
+      event = "VeryLazy",
+      opts = {},
+      config = function(_, opts)
+        opts.bind = true
+        opts.handler_opts = {
+          border = "rounded",
+        }
+        require("lsp_signature").setup(opts)
+      end,
     },
   },
 }

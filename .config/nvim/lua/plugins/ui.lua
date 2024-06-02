@@ -73,12 +73,33 @@ return {
         },
         opts = { skip = true },
       })
+      table.insert(opts.routes, {
+        filter = {
+          event = "msg_show",
+          find = "lines",
+        },
+        opts = { skip = true },
+      })
+      table.insert(opts.routes, {
+        filter = {
+          event = "msg_show",
+          find = "Plugin Updates",
+        },
+        opts = { skip = true },
+      })
       -- table.insert(opts.routes, {
-      --     filter = {
-      --         event = "msg_show",
-      --         find = " ",
-      --     },
-      --     opts = { skip = true },
+      --   filter = {
+      --     event = "lsp",
+      --     find = "Diagnosing",
+      --   },
+      --   opts = { skip = true },
+      -- })
+      -- table.insert(opts.routes, {
+      --   filter = {
+      --     event = "lsp",
+      --     find = "Loading workspace",
+      --   },
+      --   opts = { skip = true },
       -- })
       local focused = true
       vim.api.nvim_create_autocmd("FocusGained", {

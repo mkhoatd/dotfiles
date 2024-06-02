@@ -20,6 +20,8 @@ then
   autoload -Uz compinit
   compinit
 fi
+eval "$(op completion zsh)"; compdef _op op
+
 alias "crc"="code ~/.zshrc"
 alias "src"="source ~/.zshrc"
 alias "tf"="terraform"

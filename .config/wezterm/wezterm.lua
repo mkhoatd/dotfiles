@@ -6,7 +6,7 @@ end
 
 -- This will hold the configuration.
 local config = wezterm.config_builder()
-local opacity = 0.75
+local opacity = 0.85
 local transparent_bg = "rgba(22, 24, 26, " .. opacity .. ")"
 
 config.enable_scroll_bar = true
@@ -29,7 +29,7 @@ config.ssh_domains = {
 
 config.enable_tab_bar = true
 config.hide_tab_bar_if_only_one_tab = true
-config.use_fancy_tab_bar = true
+config.use_fancy_tab_bar = false
 config.colors.tab_bar = {
 	background = transparent_bg,
 	active_tab = {
@@ -50,7 +50,7 @@ config.colors.tab_bar = {
 	},
 }
 
-config.macos_window_background_blur = 15
+config.macos_window_background_blur = 10
 
 local is_linux = function()
 	return wezterm.target_triple:find("linux") ~= nil

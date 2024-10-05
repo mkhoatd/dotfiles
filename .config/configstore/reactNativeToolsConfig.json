@@ -1,14 +1,14 @@
 {
-	"version": "1.12.2",
+	"version": "1.13.0",
 	"surveyConfig": {
 		"shortPeriodToRemind": 30,
 		"longPeriodToRemind": 90,
 		"popCoveragePercent": 0.1,
 		"enabled": true,
-		"daysLeftBeforeSurvey": 23,
+		"daysLeftBeforeSurvey": 18,
 		"surveyName": "userSatisfactionSurvey",
 		"surveyUrl": "https://www.surveymonkey.com/r/6FJGVDV",
-		"lastExtensionUsageDate": "2024-01-24T02:38:55.270Z"
+		"lastExtensionUsageDate": "2024-09-26T15:15:21.275Z"
 	},
 	"tipsConfig": {
 		"daysLeftBeforeGeneralTip": 0,

@@ -54,10 +54,10 @@ keymap.set("n", "sl", "<C-w>l")
 keymap.set("n", "sj", "<C-w>j")
 
 -- Resize window
-keymap.set("n", "<C-w><left>", "<C><")
-keymap.set("n", "<C-w><right>", "<C>>")
-keymap.set("n", "<C-w><down>", "<C-w>-")
-keymap.set("n", "<C-w><up>", "<C-w>+")
+keymap.set("n", "<C-Up>", "<cmd>resize +5<cr>", { desc = "Increase Window Height" })
+keymap.set("n", "<C-Down>", "<cmd>resize -5<cr>", { desc = "Decrease Window Height" })
+keymap.set("n", "<C-Left>", "<cmd>vertical resize -5<cr>", { desc = "Decrease Window Width" })
+keymap.set("n", "<C-Right>", "<cmd>vertical resize +5<cr>", { desc = "Increase Window Width" })
 
 -- Diagnostics
 -- keymap.set("n", "<C-j>", function()
@@ -78,20 +78,15 @@ keymap.set("t", "<C-[>", "<C-\\><C-n>", opts)
 keymap.set("n", "vt", ":vsplit<Return>:terminal<Return>a", opts)
 
 -- Cody
-keymap.set("n", "<leader>oc", ":CodyChat2 <CR>", opts)
-keymap.set("v", "<leader>oa", ":CodyAsk2 ", opts)
-keymap.set("v", "<leader>oe", ":CodyExplain2 <CR>", opts)
-keymap.set("v", "<leader>os", ":CodySearch2 <CR>", opts)
-keymap.set("v", "<leader>ot", ":CodyTask2 ", opts)
-keymap.set("n", "<leader>tp", function()
-  vim.lsp.buf.execute_command({ command = "tinymist.pinMain", arguments = { vim.api.nvim_buf_get_name(0) } })
-end)
-keymap.set("n", "<leader>tup", function()
-  vim.lsp.buf.execute_command({ command = "tinymist.pinMain", arguments = { nil } })
-end)
+-- keymap.set("n", "<leader>tp", function()
+--   vim.lsp.buf.execute_command({ command = "tinymist.pinMain", arguments = { vim.api.nvim_buf_get_name(0) } })
+-- end)
+-- keymap.set("n", "<leader>tup", function()
+--   vim.lsp.buf.execute_command({ command = "tinymist.pinMain", arguments = { nil } })
+-- end)
 
-vim.keymap.set("n", "<leader>ce", "<cmd>CommentREPLExecute<CR>")
-vim.keymap.set("n", "<leader>cl", "<cmd>CommentREPLLog<CR>")
+keymap.set("n", "<leader>ce", "<cmd>CommentREPLExecute<CR>")
+keymap.set("n", "<leader>cl", "<cmd>CommentREPLLog<CR>")
 
 -- Diagnostics
 -- keymap.set("n", "<C-j>", function()
@@ -100,3 +95,5 @@ vim.keymap.set("n", "<leader>cl", "<cmd>CommentREPLLog<CR>")
 -- keymap.set("n", "<C-k", function()
 --   vim.diagnostic.goto_prev()
 -- end, opts)
+keymap.set("i", "`", "^", opts)
+

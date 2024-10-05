@@ -9,3 +9,5 @@ if test -f /Users/mkhoatd/miniforge3/bin/conda
 end
 # <<< conda initialize <<<
 
+
+export PATH="$PATH:$HOME/.local/bin"

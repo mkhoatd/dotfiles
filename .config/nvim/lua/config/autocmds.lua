@@ -47,9 +47,18 @@ vim.api.nvim_create_autocmd({
   "BufRead",
 }, {
   group = "GuessIndent",
-  pattern = "*",
+  pattern = { "*" },
   callback = function()
     require("guess-indent").guess_indent()
     vim.cmd("GuessIndent")
+  end,
+})
+
+vim.api.nvim_create_augroup("autofmt", { clear = true })
+vim.api.nvim_create_autocmd({ "FileType" }, {
+  group = "autofmt",
+  pattern = { "*" },
+  callback = function()
+    vim.b.autoformat = false
   end,
 })

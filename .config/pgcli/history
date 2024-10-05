@@ -1,0 +1,12 @@
+
+# 2024-10-02 10:26:25.253984
++ls
+
+# 2024-10-02 10:27:40.578670
++l
+
+# 2024-10-02 10:27:44.379272
++select * from public.wallets.schema_migration
+
+# 2024-10-02 10:27:51.628330
++select * from public.accounts

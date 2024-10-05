@@ -36,10 +36,18 @@ return {
       colorscheme = "cyberdream",
     },
   },
+  -- {
+  --   "nvim-lualine/lualine.nvim",
+  --   event = "VeryLazy",
+  --   opts = function(_, opts)
+  --     opts = {}
+  --   end
+  -- }
   {
     "nvim-lualine/lualine.nvim",
     event = "VeryLazy",
-    opts = function()
+    enabled = true,
+    opts = function(_, opts)
       local colors = require("cyberdream.colors").default
       local cyberdream = require("lualine.themes.cyberdream")
       local copilot_colors = {
@@ -126,8 +134,11 @@ return {
           },
         },
 
-        extensions = { "lazy", "toggleterm", "mason", "neo-tree", "trouble" },
+        -- extensions = { "lazy", "mason", "neo-tree", "trouble" },
       }
+    end,
+    config = function(_, opts)
+      require("lualine").setup(opts)
     end,
   },
 }

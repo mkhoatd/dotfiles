@@ -41,7 +41,7 @@ vim.wo.signcolumn = "yes"
 vim.cmd([[let &t_Cs = "\e[4:3m"]])
 -- vim.cmd([[let &t_Ce = "\e[4:0m"]])
 
-vim.g.lazyvim_python_lsp = "basedpyright"
+-- vim.g.lazyvim_python_lsp = "basedpyright"
 vim.opt.clipboard:append({ "unnamedplus" })
 vim.o.encoding = "utf-8"
 vim.opt.background = "dark" -- set this to dark or light

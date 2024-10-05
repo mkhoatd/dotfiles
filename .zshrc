@@ -2,6 +2,7 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 plugins=(git 
     # zsh-eza
+    zsh-z
     aws 
     conda-zsh-completion 
     # zsh-autocomplete 
@@ -9,13 +10,15 @@ plugins=(git
 
 source $ZSH/oh-my-zsh.sh
 
-export PATH=$GEM_HOME/bin:/opt/homebrew/bin:$PATH
+export PATH="/Users/mkhoatd/bin/:$GEM_HOME/bin:/opt/homebrew/bin:~/Library/Application Support/JetBrains/Toolbox/:$PATH"
+export PATH=$PATH:$(go env GOPATH)/bin
 
 eval "$(op completion zsh)"; compdef _op op
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 alias "crc"="code ~/.zshrc"
+alias "nrc"="nvim ~/.zshrc"
 alias "src"="source ~/.zshrc"
 alias "tf"="terraform"
 alias "ma"="mamba activate"
@@ -46,8 +49,6 @@ export NVM_DIR="$HOME/.nvm"
 # source ~/aps/.aps_config
 # alias aps="aps && source ~/aps/.aps_config"
 # # <<< aps initialize <<<
-
-conda activate base
 
 export IDF_CCACHE_ENABLE=1
 alias matter="source ~/esp-idf/export.sh && source ~/esp-matter/export.sh"

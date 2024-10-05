@@ -1,5 +1,8 @@
 return {
   {
+    "terrastruct/d2-vim"
+  },
+  {
     "b0o/incline.nvim",
     -- dependencies = { "craftzdog/solarized-osaka.nvim" },
     event = "BufReadPre",
@@ -27,15 +30,6 @@ return {
           return { { icon, guifg = color }, { " " }, { filename } }
         end,
       })
-    end,
-  },
-  {
-    "echasnovski/mini.animate",
-    event = "VeryLazy",
-    opts = function(_, opts)
-      opts.scroll = {
-        enable = false,
-      }
     end,
   },
   -- messages, cmdline and the popupmenu

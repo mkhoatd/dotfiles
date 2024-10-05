@@ -1,0 +1,93 @@
+{
+  "config": {
+    "configuration": {
+      "proxy": "",
+      "codebase": "",
+      "serverEndpoint": "",
+      "customHeaders": {},
+      "debugVerbose": false,
+      "debugFilter": null,
+      "telemetryLevel": "all",
+      "autocomplete": true,
+      "autocompleteLanguages": {
+        "*": true
+      },
+      "chatPreInstruction": "",
+      "editPreInstruction": "",
+      "commandCodeLenses": true,
+      "autocompleteAdvancedProvider": "default",
+      "autocompleteCompleteSuggestWidgetSelection": true,
+      "autocompleteFormatOnAccept": false,
+      "autocompleteDisableInsideComments": false,
+      "codeActions": true,
+      "commandHints": true,
+      "internalUnstable": true,
+      "internalDebugContext": false,
+      "internalDebugState": false,
+      "autocompleteAdvancedModel": "starcoder-16b",
+      "autocompleteExperimentalGraphContext": null,
+      "experimentalCommitMessage": true,
+      "experimentalNoodle": false,
+      "experimentalTracing": false,
+      "experimentalSupercompletions": false,
+      "autocompleteExperimentalOllamaOptions": {
+        "url": "http://localhost:11434",
+        "model": "codellama:7b-code"
+      },
+      "autocompleteExperimentalPreloadDebounceInterval": 0,
+      "isRunningInsideAgent": false,
+      "hasNativeWebview": true,
+      "agentHasPersistentStorage": false,
+      "autocompleteFirstCompletionTimeout": 3500
+    },
+    "clientState": {
+      "lastUsedEndpoint": "https://sourcegraph.com/",
+      "anonymousUserID": "f67155a7-519a-4abb-8134-107e41318eb2",
+      "lastUsedChatModality": "sidebar",
+      "modelPreferences": {
+        "https://sourcegraph.com/": {
+          "defaults": {
+            "chat": "anthropic::2023-06-01::claude-3.5-sonnet",
+            "edit": "anthropic::2023-06-01::claude-3.5-sonnet",
+            "autocomplete": "fireworks::v1::deepseek-coder-v2-lite-base"
+          },
+          "selected": {}
+        }
+      },
+      "waitlist_o1": null
+    },
+    "auth": {
+      "accessToken": "sgp_fd1b4edb60bf82b8_9ab5ece7f33ba65f64e6bc77d41666e796d7a0f0",
+      "serverEndpoint": "https://sourcegraph.com/"
+    }
+  },
+  "authStatus": {
+    "id": "VXNlcjoyNDc0MjQ=",
+    "hasVerifiedEmail": true,
+    "displayName": "mkhoatd",
+    "username": "mkhoatd",
+    "avatarURL": "https://avatars.githubusercontent.com/u/75836068?v=4",
+    "primaryEmail": "binnhatle@gmail.com",
+    "organizations": {
+      "nodes": []
+    },
+    "authenticated": true,
+    "endpoint": "https://sourcegraph.com/",
+    "siteVersion": "293816_2024-10-04_5.7-cccbca52ad4d",
+    "configOverwrites": {
+      "chatModel": "sourcegraph/claude-3.5-sonnet",
+      "chatModelMaxTokens": 45000,
+      "fastChatModel": "sourcegraph/claude-3-haiku",
+      "fastChatModelMaxTokens": 7000,
+      "completionModel": "sourcegraph/deepseek-coder-v2-lite-base",
+      "completionModelMaxTokens": 2048,
+      "provider": "sourcegraph",
+      "smartContextWindow": false
+    },
+    "userCanUpgrade": false,
+    "requiresVerifiedEmail": true,
+    "codyApiVersion": 2,
+    "pendingValidation": false,
+    "isFireworksTracingEnabled": false
+  }
+}

@@ -2,3 +2,6 @@ node_modules
 gitnvim
 raycast
 op
+.DS_Store
+github-copilot
+

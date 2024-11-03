@@ -54,11 +54,18 @@ vim.api.nvim_create_autocmd({
   end,
 })
 
-vim.api.nvim_create_augroup("autofmt", { clear = true })
 vim.api.nvim_create_autocmd({ "FileType" }, {
-  group = "autofmt",
-  pattern = { "*" },
+  pattern = { "zig" },
   callback = function()
     vim.b.autoformat = false
   end,
 })
+
+-- vim.api.nvim_create_augroup("autofmt", { clear = true })
+-- vim.api.nvim_create_autocmd({ "FileType" }, {
+--   group = "autofmt",
+--   pattern = { "*" },
+--   callback = function()
+--     vim.b.autoformat = false
+--   end,
+-- })

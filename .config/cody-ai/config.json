@@ -63,30 +63,15 @@
   },
   "authStatus": {
     "id": "VXNlcjoyNDc0MjQ=",
-    "hasVerifiedEmail": true,
+    "hasVerifiedEmail": false,
     "displayName": "mkhoatd",
     "username": "mkhoatd",
     "avatarURL": "https://avatars.githubusercontent.com/u/75836068?v=4",
     "primaryEmail": "binnhatle@gmail.com",
-    "organizations": {
-      "nodes": []
-    },
-    "authenticated": true,
+    "organizations": [],
     "endpoint": "https://sourcegraph.com/",
-    "siteVersion": "293816_2024-10-04_5.7-cccbca52ad4d",
-    "configOverwrites": {
-      "chatModel": "sourcegraph/claude-3.5-sonnet",
-      "chatModelMaxTokens": 45000,
-      "fastChatModel": "sourcegraph/claude-3-haiku",
-      "fastChatModelMaxTokens": 7000,
-      "completionModel": "sourcegraph/deepseek-coder-v2-lite-base",
-      "completionModelMaxTokens": 2048,
-      "provider": "sourcegraph",
-      "smartContextWindow": false
-    },
-    "userCanUpgrade": false,
+    "authenticated": true,
     "requiresVerifiedEmail": true,
-    "codyApiVersion": 2,
     "pendingValidation": false,
     "isFireworksTracingEnabled": false
   }

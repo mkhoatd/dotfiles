@@ -87,16 +87,4 @@ return {
       vim.keymap.set("n", "<leader>xq", "<cmd>Telescope quickfix<cr>", { desc = "Show QuickFix List" })
     end,
   },
-  {
-    "xbase-lab/xbase",
-    build = "make install",
-    dependencies = {
-      "neovim/nvim-lspconfig",
-    },
-    config = function(_, opts)
-      require("xbase").setup({
-        sourcekit = {},
-      })
-    end,
-  },
 }

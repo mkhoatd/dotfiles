@@ -37,7 +37,10 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.toml" },
     -- { import = "lazyvim.plugins.extras.lang.tailwind" },
     { import = "lazyvim.plugins.extras.linting.eslint" },
+    { import = "lazyvim.plugins.extras.lang.gleam" },
     { import = "lazyvim.plugins.extras.lang.docker" },
+    -- { import = "lazyvim.plugins.extras.lang.kotlin" },
+    { import = "lazyvim.plugins.extras.lsp.neoconf" },
     { import = "lazyvim.plugins.extras.ui.mini-indentscope" },
     { import = "lazyvim.plugins.extras.editor.refactoring" },
 

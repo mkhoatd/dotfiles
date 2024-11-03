@@ -4,20 +4,6 @@
             "complex_modifications": {
                 "rules": [
                     {
-                        "description": "Change caps_lock to control if pressed with other keys, to escape if pressed alone.",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "caps_lock",
-                                    "modifiers": { "optional": ["any"] }
-                                },
-                                "to": [{ "key_code": "left_control" }],
-                                "to_if_alone": [{ "key_code": "escape" }],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "Ctrl+p/Ctrl+n to arrow up/down",
                         "manipulators": [
                             {
@@ -84,6 +70,19 @@
                                 ],
                                 "from": { "key_code": "d" },
                                 "to": [{ "key_code": "right_arrow" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Change caps_lock to control if pressed with other keys, to escape if pressed alone.",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "caps_lock",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "to": [{ "key_code": "escape" }],
                                 "type": "basic"
                             }
                         ]
